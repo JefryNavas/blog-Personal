@@ -1,0 +1,97 @@
+      <section class="section contact-me" data-section="section5">
+        <div class="container">
+                    <div class="section-heading">
+            <h2>Dirección</h2>
+            <div class="line-dec"></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7741973375387!2d-78.52514552012296!3d-0.26945981954580855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe40e8f381472bce8!2sCasales%20Metropoli%20N9-twng%209!5e0!3m2!1sen!2sec!4v1624578006344!5m2!1sen!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+          <div class="section-heading">
+            <h2>Contactamé</h2>
+            <div class="line-dec"></div>
+            <span
+              >Estaré encantado de responder tus preguntas</span
+            >
+          </div>
+          <div class="row">
+            <div class="right-content">
+              <div class="container">
+                <form id="contact" action="/send-email" method="post">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="name"
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder="Tu nombre..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-6">
+                      <fieldset>
+                        <input
+                          name="email"
+                          type="text"
+                          class="form-control"
+                          id="email"
+                          placeholder="Tu email..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <input
+                          name="subject"
+                          type="text"
+                          class="form-control"
+                          id="subject"
+                          placeholder="Asunto..."
+                          required=""
+                        />
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <textarea
+                          name="message"
+                          rows="6"
+                          class="form-control"
+                          id="message"
+                          placeholder="Mensaje..."
+                          required=""
+                        ></textarea>
+                      </fieldset>
+                    </div>
+                    <div class="col-md-12">
+                      <fieldset>
+                        <button type="submit" id="form-submit" class="button">
+                          Enviar Mensaje
+                        </button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+      </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    {{#if alert}}
+        <script>
+        Swal.fire({
+            title: '{{alertTitle}}',
+            text: '{{alertMessage}}',
+            icon: '{{icon}}',
+            showConfirmButton: '{{showConfirmButton}}',
+            timer: '{{timer}}'
+        }).then(()=>{
+            window.location = '/{{ruta}}'
+        })
+    </script>
+    {{/if}}
