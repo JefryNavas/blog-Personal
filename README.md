@@ -1,6 +1,6 @@
 # Página Web Personal - Jefry Navas
 
-Crear una página web en NodeJS que crees un blog personal tuyo
+Crear tu propia página web con todas las opciones de un blog personal
 
 ## Autor: Jefry Navas
 ## Plataformas Web
